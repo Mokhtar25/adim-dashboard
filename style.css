@@ -1,0 +1,29 @@
+body, html{
+    height: 100%;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-areas: 
+    "sidebar header header"
+    "sidebar cards side"
+    "sidebar cards side"
+    ;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    
+}
+.header{
+    grid-area: header;
+}
+.wrapper-card{
+    grid-area: cards;
+}
+
+.wrapper-side{
+    grid-area: side;
+}
